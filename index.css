@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: linear-gradient( #E4E8E7, #F3E2D8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    width: 350px;
+    height: 400px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #999;
+    border: solid 1px #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 0 3px lightblue, 0 0 20px lightblue ;
+    
+}
+
+
+
+header{
+    display: grid;
+    grid-template-columns: 50px auto;
+    font-weight: bold;
+    align-items: center;
+}
+
+header img{
+    width: 32px;    
+    position: relative;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    /* border: 1px solid #aaa; */
+    
+}
+
+
+section{
+    text-align: center;
+    margin-top: 15px;
+    padding: 35px;
+    max-height: 250px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+::placeholder{
+    color: #ccc;
+}
+
+label{
+    float: left;    
+    line-height: 13px;
+    font-size: 0.8rem;
+}
+
+input {            
+    width: 100%;
+    height: 30px;
+    border: 2px solid #ccc;
+    color: #555;
+    box-sizing: border-box; /*Box sizing makes the input width stay at 200px rather than increase to 260px due to the padding*/
+    padding: 10px;
+    outline: none;
+    transition: 0.5s;
+    margin: 5px 0;
+}
+
+input:focus{
+    border: 2px solid rgb(0, 153, 255);
+}
+
+button{
+    display: block;
+    width: 180px;
+    height: 30px;
+    background-color:rgb(0, 153, 255);            
+    color: #fff;
+    border: 2px solid lightblue;            
+    margin: 30px auto;
+    outline: none;
+    transition: 0.7s;            
+}
+
+button:focus{
+    border: 2px solid blue;
+}   
+
+button:hover{
+    box-shadow: 0 0 10px  rgba(0, 153, 255, 0.7);
+    
+}    
+
+section p, section a{
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+footer{    
+    text-align: center; 
+    padding: 5px;
+}
+
+footer p{        
+    user-select: none;    
+    font-size: .8rem;
+
+    transition: all 250ms linear;
+}
+
+footer p:hover{
+    letter-spacing: 1px;
+    color: #555;
+}
